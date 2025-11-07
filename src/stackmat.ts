@@ -3,7 +3,7 @@ import { isEvent, TimerEvent } from './event/timer-event'
 import { TimerEventHandler, TimerEventManager } from './event/timer-event-manager'
 import { Packet } from './packet/packet'
 
-export default class Stackmat {
+export class Stackmat {
     private eventManager: TimerEventManager = new TimerEventManager()
     private audioProcessor?: AudioProcessor
 

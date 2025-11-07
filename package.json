@@ -1,5 +1,5 @@
 {
-  "name": "stackmat",
+  "name": "stackmat-v2",
   "type": "module",
   "source": "src/index.ts",
   "exports": {

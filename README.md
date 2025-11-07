@@ -1,4 +1,4 @@
-# Stackmat-v2#
+# Stackmat-v2 #
 
 Subscribe to events received from a Stackmat timer connected to the browser via the HTML5 Audio API.
 
@@ -14,12 +14,12 @@ This is a fork of the original [stackmat](https://www.npmjs.com/package/stackmat
 
 Install the library:
 
-`npm install stackmat`
+`npm install stackmat-v2`
 
 Subscribe to events and start listening for packets:
 
 ```typescript
-import { Stackmat, Packet } from 'stackmat'
+import { Stackmat, Packet } from 'stackmat-v2'
 
 const stackmat = new Stackmat()
 

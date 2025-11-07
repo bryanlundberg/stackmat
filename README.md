@@ -1,8 +1,13 @@
-# Stackmat #
+# Stackmat-v2#
 
 Subscribe to events received from a Stackmat timer connected to the browser via the HTML5 Audio API.
 
 Both a Typescript-based library and a UMD build are available.
+
+
+## About ##
+
+This is a fork of the original [stackmat](https://www.npmjs.com/package/stackmat) library with minor updates for compatibility.
 
 
 ## Typescript Usage ##
@@ -28,34 +33,6 @@ stackmat.on('stopped', (packet: Packet) => {
 
 stackmat.start()
 ```
-
-
-## Browser Usage ##
-
-Import the UMD build:
-
-```html
-<script type="text/javascript" src="https://unpkg.com/stackmat"></script>
-```
-
-Subscribe to events and start listening for packets:
-
-```html
-<script type="text/javascript">
-const stackmat = new Stackmat();
-
-stackmat.on('started', packet => {
-    console.log('Timer started')
-})
-
-stackmat.on('stopped', packet => {
-    console.log('Timer stopped at: ' + packet.timeAsString)
-})
-
-stackmat.start()
-</script>
-```
-
 
 ## Disconnecting ##
 
